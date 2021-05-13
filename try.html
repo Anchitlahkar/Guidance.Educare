@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <title>Guidance Educare</title>
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+</head>
+
+<style>
+    .navbar-brand {
+        background: url("assets/img/favicon.png") top right;
+    }
+
+    #Tophero {
+        width: 100%;
+        height: 100vh;
+        background: url("assets/img/favicon.png") top right;
+        background-size: cover;
+        position: relative;
+    }
+
+    #Tophero:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #Tophero .hero-container {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    #Tophero h1 {
+        margin: 0 0 10px 0;
+        font-size: 72px;
+        font-family: "Satisfy", serif;
+        color: #fff;
+    }
+
+    #Tophero h2 {
+        color: #eee;
+        margin-bottom: 50px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    #Tophero .btn-scroll {
+        transition: 0.4s;
+        color: rgba(255, 255, 255, 0.6);
+        animation: up-down 1s ease-in-out infinite alternate-reverse both;
+    }
+
+    #Tophero .btn-scroll i {
+        font-size: 48px;
+    }
+
+    #Tophero .btn-scroll:hover {
+        color: #ffb727;
+    }
+
+    #Videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+</style>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/favicon.png" style="height: 40px" /></a>
+
+            <button style="margin-left: 70" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: 500" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: 500" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-weight: 500" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Subject
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" style="font-weight: 500" href="#">Social Studies</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" style="font-weight: 500" href="#">Science</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" style="font-weight: 500" href="#">Mathematics</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- Top Page Into -->
+    <section id="Tophero">
+        <div class="hero-container">
+            <h1>Guidance Educare</h1>
+            <h2>
+                A coaching institute providing complete concept clearance for
+                excellence
+            </h2>
+            <a href="#history9Video" title="Scroll Down">
+                <img src="assets/img/downArrow.png" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Class 9 History Videos -->
+    <section style="background-color: whitesmoke" id="history9Video">
+        <br /><br /><br /><br />
+        <div class="container">
+            <div class="container">
+                <h3 style="font-weight: bold">Class 9 history</h3>
+            </div>
+        </div>
+        <br /><br />
+
+        <div id="Vedios">
+            <div class="Vedeo-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qMGXMOpbNSE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <br />
+                <h3>French Revolution EP 1</h3>
+            </div>
+
+            <div class="Vedeo-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ohTtRof3Lu8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <br />
+                <h3>French Revolution EP 3</h3>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
