@@ -81,15 +81,49 @@
         color: #ffb727;
     }
 
-    #Videos{
+    #Videos {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
-        justify-content: space-evenly;    
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
 
+    .subject h1{
+        margin: 10px;
+        font-size: 80px;
+        font-family: Brush Script MT;
+    }
+
 </style>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBSJEBIauSNxbiVFxssDVL8fG6BtTkWl38",
+        authDomain: "guidence-2481c.firebaseapp.com",
+        databaseURL: "https://guidence-2481c-default-rtdb.firebaseio.com",
+        projectId: "guidence-2481c",
+        storageBucket: "guidence-2481c.appspot.com",
+        messagingSenderId: "277563900611",
+        appId: "1:277563900611:web:cb82d97d45e6198c27d876"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+</script>
 
 
 <header>
@@ -119,7 +153,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="#history9Video" title="Scroll Down">Social Studies</a>
+                                <a class="dropdown-item" style="font-weight: 500" href="#history9Video"
+                                    title="Scroll Down">Social Studies</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" style="font-weight: 500" href="#">Science</a>
@@ -137,7 +172,7 @@
 
 <body>
     <!-- Top Page Into -->
-    <section  id="Tophero">
+    <section id="Tophero">
         <div class="hero-container">
             <h1>Guidance Educare</h1>
             <h2>
@@ -150,43 +185,66 @@
         </div>
     </section>
 
-    <!-- Class 9 History Videos -->
     <section style="background-color: whitesmoke" id="history9Video">
         <br /><br /><br /><br />
-        <div class="container">
-            <div class="container">
-                <h1 style="font-weight: bold">Class 9 history:</h1>
+
+        <!-- Subjects -->
+        <div id="Diff-Subjects">
+            <!-- Social Science -->
+            <div class="subject" id="SST">
+                <h1 style="font-weight: bold;">History:</h1>
+                <br>
+                <div id="items">
+                    <h4 style="font-weight: bold; margin-left: 20px;">French Revolution:</h4>
+                    <div id="VIDEOS">
+                        <div class="Video-item">
+                            <iframe src="https://www.youtube.com/embed/qMGXMOpbNSE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <br />
+                            <h3> EP 1</h3>
+                            <br><br>
+                        </div>
+                        <br><br>
+
+                        <div class="Video-item">
+                            <iframe src="https://www.youtube.com/embed/ohTtRof3Lu8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                            <br />
+                            <h3> EP 3</h3>
+                            <br><br>
+
+                        </div>
+                        <br><br>
+                    </div>
+                    <div id="PDF"></div>
+                </div>
             </div>
-            <br>
-            <h4 style="font-weight: bold; margin-left: 20px;">French Revolution:</h4>
-        </div>
-        <br /><br />
 
-        <div  id="Videos">
-            <div class="Vedeo-item">
-                <iframe  src="https://www.youtube.com/embed/qMGXMOpbNSE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <br />
-                <h3>  EP 1</h3>
-                <br><br>
+
+            <!-- Science -->
+            <div class="subject" id="Science">
+                <h1 style="font-weight: bold">Science:</h1>
+                <div id="Items">
+                    <div id="VIDEO"></div>
+                    <div id="PDF"></div>
+                </div>
             </div>
-            <br><br>
 
-            <div class="Vedeo-item">
-                <iframe src="https://www.youtube.com/embed/ohTtRof3Lu8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
 
-                <br />
-                <h3>  EP 3</h3>
-                <br><br>
-
+            <!-- Mathematics -->
+            <div class="subject" id="Mathematics">
+                <h1 style="font-weight: bold">Mathematics:</h1>
+                <div id="Items">
+                    <div id="VIDEO"></div>
+                    <div id="PDF"></div>
+                </div>
             </div>
-            <br><br>
-        </div>
+
     </section>
 </body>
 
