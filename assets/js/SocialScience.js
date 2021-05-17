@@ -2,7 +2,9 @@ var database = firebase.database();
 var len = 1;
 var Datas = [];
 
-sstDataLoad = () => {
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+ sstDataLoad = () => {
   database.ref("Subjects/SSt/items/").on("value", (data) => {
     Datas = data.val();
     console.log(Datas);
@@ -10,5 +12,24 @@ sstDataLoad = () => {
       console.log(i);
       document.getElementById("imgSst" + i).src = Datas[i].Link;
     }
+    onClickImg()
   });
+};
+
+onClickImg = () => {
+  for (var i = 1; i < Datas.length; i++) {
+    img = document.getElementById("imgSst" + i);
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+  }
 };
