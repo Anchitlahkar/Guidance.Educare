@@ -89,42 +89,36 @@
     }
 
 
-    .subject h1{
+    .subject h1 {
         margin: 10px;
-        font-size: 80px;
+        font-size: 70px;
         font-family: Brush Script MT;
     }
-
 </style>
 
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+<div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
 
-<script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyBSJEBIauSNxbiVFxssDVL8fG6BtTkWl38",
-        authDomain: "guidence-2481c.firebaseapp.com",
-        databaseURL: "https://guidence-2481c-default-rtdb.firebaseio.com",
-        projectId: "guidence-2481c",
-        storageBucket: "guidence-2481c.appspot.com",
-        messagingSenderId: "277563900611",
-        appId: "1:277563900611:web:cb82d97d45e6198c27d876"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+        var firebaseConfig = {
+            apiKey: "AIzaSyBSJEBIauSNxbiVFxssDVL8fG6BtTkWl38",
+            authDomain: "guidence-2481c.firebaseapp.com",
+            databaseURL: "https://guidence-2481c-default-rtdb.firebaseio.com",
+            projectId: "guidence-2481c",
+            storageBucket: "guidence-2481c.appspot.com",
+            messagingSenderId: "277563900611",
+            appId: "1:277563900611:web:cb82d97d45e6198c27d876"
+        };
 
-</script>
+        firebase.initializeApp(firebaseConfig);
 
+    </script>
+</div>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black;">
@@ -141,10 +135,10 @@
                 <br>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-weight: 500" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" style="font-weight: 500" aria-current="page" href="#"> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: 500" href="about.html">About Us</a>
+                        <a class="nav-link" style="font-weight: 500" href="about.html"> About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="font-weight: 500" href="#" id="navbarDropdown"
@@ -153,14 +147,14 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="#history9Video"
-                                    title="Scroll Down">Social Studies</a>
+                                <a class="dropdown-item" style="font-weight: 500" href="html/SST.html"
+                                    title="Scroll Down"> Social Studies</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="#">Science</a>
+                                <a class="dropdown-item" style="font-weight: 500" href="html/science.html"> Science</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="#">Mathematics</a>
+                                <a class="dropdown-item" style="font-weight: 500" href="html/SST.html"> Mathematics</a>
                             </li>
                         </ul>
                     </li>
@@ -170,11 +164,11 @@
     </nav>
 </header>
 
-<body>
+<body onload="loadpage()" >
     <!-- Top Page Into -->
     <section id="Tophero">
         <div class="hero-container">
-            <h1>Guidance Educare</h1>
+            <h1 style="font-family: Brush Script MT; font-size: 100px; ">Guidance Educare</h1>
             <h2>
                 A coaching institute providing complete concept clearance for
                 excellence
@@ -191,38 +185,9 @@
         <!-- Subjects -->
         <div id="Diff-Subjects">
             <!-- Social Science -->
-            <div class="subject" id="SST">
+            <div class="subject" id="SSt">
                 <h1 style="font-weight: bold;">History:</h1>
                 <br>
-                <div id="items">
-                    <h4 style="font-weight: bold; margin-left: 20px;">French Revolution:</h4>
-                    <div id="VIDEOS">
-                        <div class="Video-item">
-                            <iframe src="https://www.youtube.com/embed/qMGXMOpbNSE" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                            <br />
-                            <h3> EP 1</h3>
-                            <br><br>
-                        </div>
-                        <br><br>
-
-                        <div class="Video-item">
-                            <iframe src="https://www.youtube.com/embed/ohTtRof3Lu8" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-
-                            <br />
-                            <h3> EP 3</h3>
-                            <br><br>
-
-                        </div>
-                        <br><br>
-                    </div>
-                    <div id="PDF"></div>
-                </div>
             </div>
 
 
@@ -235,9 +200,11 @@
                 </div>
             </div>
 
+            <img id="img">
+
 
             <!-- Mathematics -->
-            <div class="subject" id="Mathematics">
+            <div class="subject" id="Maths">
                 <h1 style="font-weight: bold">Mathematics:</h1>
                 <div id="Items">
                     <div id="VIDEO"></div>
@@ -247,5 +214,7 @@
 
     </section>
 </body>
+
+<script src="assets/js/main.js"></script>
 
 </html>
