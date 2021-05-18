@@ -80,7 +80,6 @@
         width: 80%;
         max-width: 700px;
         height: auto;
-
     }
 
     /* Add Animation */
@@ -116,9 +115,8 @@
     /* 100% Image Width on Smaller Screens */
     @media only screen and (max-width: 700px) {
         .modal-content {
-            width: 100%;
             height: auto;
-
+            width: 100%;
         }
     }
 </style>
@@ -150,7 +148,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black;">
         <div class="container-fluid">
-            <a href="../public/index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/img/favicon.png" style="height: 40px" /></a>
 
             <button style="margin-left: 70" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -162,11 +160,11 @@
                 <br>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-weight: 500" aria-current="page" href="../public/index.html">
+                        <a class="nav-link active" style="font-weight: 500" aria-current="page" href="../index.html">
                             Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: 500" href="../public/about.html"> About Us</a>
+                        <a class="nav-link" style="font-weight: 500" href="../about.html"> About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="font-weight: 500" href="#" id="navbarDropdown"
@@ -175,20 +173,20 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="../html/SST.html"
+                                <a class="dropdown-item" style="font-weight: 500" href="SST.html"
                                     title="Scroll Down"> Social Studies</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="../html/science.html">
+                                <a class="dropdown-item" style="font-weight: 500" href="science.html">
                                     Science</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" style="font-weight: 500" href="../html/maths.html">
+                                <a class="dropdown-item" style="font-weight: 500" href="maths.html">
                                     Mathematics</a>
                             </li>
                         </ul>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-weight: 500" href="../public/form.html"> Enroll Now</a>
+                        <a class="nav-link" style="font-weight: 500" href="../form.html"> Enroll Now</a>
                     </li>
                     </li>
                 </ul>
@@ -197,15 +195,15 @@
     </nav>
 </header>
 
-<body onload="scienceDataLoad()">
+<body onload="sstDataLoad()">
     <section>
         <div id="subject">
-            <h1 style="font-weight: bold;">Science:</h1>
+            <h1 style="font-weight: bold;">Social Science:</h1>
             <div id="items">
-                <img id="imgSc1">
-                <img id="imgSc2">
-                <img id="imgSc3">
-                <img id="imgSc4">
+                <img id="imgSst1"><br><br>
+                <img id="imgSst2"><br><br>
+                <img id="imgSst3"><br><br>
+                <img id="imgSst4"><br><br>
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -215,6 +213,6 @@
     </section>
 </body>
 
-<script src="../assets/js/Science.js"></script>
+<script src="../assets/js/SocialScience.js"></script>
 
 </html>
